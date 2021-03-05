@@ -1,0 +1,17 @@
+<p><%=link_to "New Attraction", new_attraction_path if current_user.admin?%></p>
+
+<h1>Listing attractions</h1>
+<table>
+  <th>
+    <tr>
+      <td><strong>Picture</strong></td>
+      <td><strong>Name</strong></td>
+      <td><strong>Tickets</strong></td>
+      <td><strong>Check It</strong></td>
+    </tr>
+  </th>
+  <tbody>
+    <%= render @attractions %>
+  </tbody>
+
+</table>
